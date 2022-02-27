@@ -10,6 +10,7 @@
 
 body {
   font-family: "Press Start 2P", cursive;
+  overflow-x: hidden;
   background: rgb(254, 180, 128);
   background: linear-gradient(
     105deg,
