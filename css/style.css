@@ -1,0 +1,238 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+:root {font-size: 10px;}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  background: rgb(254, 180, 128);
+  background: linear-gradient(105deg, rgba(254, 180, 128, 1) 0%, rgba(252, 139, 83, 1) 99%);
+}
+
+/* custom scrollbar and cursor  */
+
+body::-webkit-scrollbar {width: 0.75rem;}
+
+body::-webkit-scrollbar-track {background-color: black;}
+
+body::-webkit-scrollbar-thumb {background-color: teal;}
+
+*,iframe {cursor: url(../assets/cursor.svg), auto !important;}
+
+.active {background-color: rgb(254, 180, 128);}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.brand-title {font-size: 2rem; margin: 1rem;}
+
+.navbar-links {height: 100%;}
+
+.navbar-links ul {display: flex; margin: 0; padding: 0;}
+
+.navbar-links li {list-style: none; transition: 250ms ease-in;}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 2rem;
+  font-size: 1.2rem;
+  transition: 250ms ease-in;
+}
+
+.navbar-links li:hover {background-color: rgb(254, 180, 128); color: rgb(255, 255, 106);}
+
+.navbar-links a:hover {color: rgb(255, 255, 106);}
+
+/* menu button for small screens (<800px) */
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {height: 3px; width: 100%; background-color: white; border-radius: 10px; }
+
+/* header styling start  */
+header h1, h2{text-align: center;}
+
+.banner h1 {margin: 5rem;font-size: 3rem;}
+/* header styling end  */
+
+
+/* main content styling start */
+.collection-heading h1 {
+  margin: 5rem;
+  font-size: 2.5rem;
+}
+
+.collection-heading h2 {
+  margin: 5rem;
+  font-size: 2rem;
+}
+
+.latest-collection, .collectibles
+{
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.latest-collection img
+{    transform: rotateZ(0deg); 
+     width: 20vw; margin: 50px; 
+     border-radius: 5%;
+     transition: 100ms ease; 
+     animation: flip 5s linear forwards;
+}
+
+.collectibles img
+{
+  width: 20vw; margin: 50px; 
+  border-radius: 5%;
+  transition: 250ms ease;
+}
+
+
+.button{
+  background-color: #2081E2; 
+  border-radius: 15%;
+  padding: 1.5rem;
+  text-decoration: none; color: white;
+}
+
+.button:active{background-color: white; color:#2081E2; }
+
+.heading h1{font-size: 3rem; text-align: center;}
+
+.heading{margin: 5rem;}
+
+.main-box h1,h2,h3{text-align: center; margin: 5rem;}
+.main-box p{font-size: 1.5rem; padding: 10rem; text-justify: center;}
+
+.collectibles img:hover {transform: scale(1.25);}
+
+.creators
+{    display: flex; 
+     justify-content: space-evenly; 
+     align-items: center; 
+     flex-wrap: wrap;
+     overflow: hidden;
+     background: linear-gradient(105deg,rgba(252, 139, 83, 1) 99%, rgba(254, 180, 128, 1) 0% );
+     
+}
+
+.creator-one, .creator-two
+{    width: 30vw; 
+     padding: 10px; 
+     margin: 5rem;
+     height: 350px; 
+     border-radius: 5%;
+     background: linear-gradient(105deg, rgba(254, 180, 128, 1) 0%, rgba(252, 139, 83, 1) 99% );
+     line-height: 2.5rem;
+     text-align: center;
+     box-shadow: 1px 1px 10px black;
+     margin-bottom: 10rem;
+     
+}
+.creator-one:hover, .creator-two:hover
+{
+     box-shadow: inset 1px 1px 70px pink; 
+     border: 1px solid pink;}
+
+.creators img{width: 100px; margin: 60px; border-radius: 50%; }
+
+blockquote{font-size: 1.5rem;}
+
+.author{font-size: 1.3rem;}
+
+.social-media{margin: 5rem; text-align: center;}
+
+.social-media h1{font-size: 3rem; margin: 5rem;}
+
+.social-media a{text-decoration: none;}
+
+.social-icons{margin: 2rem;}
+
+.social-icons:hover img{transform: scale(1.5);}
+
+.social-icons img{width: 100px;}
+
+/* main content styling ends  */
+
+
+/* animation for cards  */
+@keyframes flip
+{
+     0%{transform: rotateY(0deg);}
+     25%{transform: rotateY(90deg);}
+     50%{transform: rotateY(180deg);}
+     75%{transform: rotateY(90deg);}
+     100%{transform: rotateY(0deg);}
+}
+
+
+/* for small screens  */
+@media (max-width: 800px) {
+.brand-title {font-size: 1.5rem;}
+
+.navbar {flex-direction: column; align-items: flex-start;}
+
+.toggle-button {display: flex;}
+
+.navbar-links {display: none; width: 100%;}
+
+.navbar-links ul {width: 100%; flex-direction: column;}
+
+.navbar-links ul li {text-align: center;}
+
+.navbar-links ul li a {padding: 2rem 2rem;}
+
+.navbar-links.active {display: flex;}
+
+.banner h1 {margin: 5rem; font-size: 2rem;}
+
+.collection-heading h1 {margin: 5rem; font-size: 1.5rem;}
+
+.collection-heading h2 {margin: 5rem; font-size: 1rem;}
+
+.latest-collection img, .collectibles img{width: 70vw; margin: 50px;}
+
+.creator-one, .creator-two{width: 80vw;}
+
+.social-media h1{font-size: 1.5rem;}
+
+.heading h1{font-size: 1.5rem;}
+}
+
+/* for larger screens (upto 4k resolution)   */
+@media (min-width: 1999px) and (max-width: 2560px)
+{
+.brand-title {font-size: 3rem;}  
+
+.nav-links li a {font-size: 5rem; padding: 3rem;}    
+      
+.banner h1 {margin: 5rem; font-size: 3.5rem;}
+      
+.collection-heading h1 {margin: 5rem; font-size: 3.5rem;}
+      
+.collection-heading h2 {margin: 5rem; font-size: 3rem;}
+      
+.latest-collection img, .collectibles img{width: 25vw; margin: 50px;}
+
+.heading h1{font-size: 3.5rem;}
+
+.social-media h1{font-size: 3.5rem;}
+}
