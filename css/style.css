@@ -401,6 +401,7 @@ blockquote {
   .main-box h2 {
     font-size: 1.2rem;
   }
+  .collectibles-heading h2{font-size: 1.2rem;}
 }
 
 /* for larger screens (upto 4k resolution)   */
