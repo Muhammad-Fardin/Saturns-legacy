@@ -10,7 +10,6 @@
 
 body {
   font-family: "Press Start 2P", cursive;
-  overflow-x: hidden;
   background: rgb(254, 180, 128);
   background: linear-gradient(
     105deg,
@@ -192,7 +191,8 @@ h1 {
 }
 
 .heading {
-  margin: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .main-box h1,
@@ -204,7 +204,7 @@ h3 {
 .main-box p {
   font-size: 1.5rem;
   padding: 10rem;
-  text-justify: center;
+  text-justify: newspaper;
 }
 
 .collectibles img:hover {
@@ -382,15 +382,17 @@ blockquote {
     width: 80vw;
   }
 
-  .social-media h1,
-  h2 {
-    font-size: 1.5rem;
+  .social-media h2 {
+    font-size: 1.2rem;
   }
 
-  .heading h1,
-  h2 {
+  .heading h1 {
     font-size: 1.2rem;
     padding: 2rem;
+  }
+
+  .heading h2 {
+    font-size: 1rem;
   }
   .main-box p {
     font-size: 1rem;
@@ -401,9 +403,11 @@ blockquote {
     font-size: 1.5rem;
   }
   .main-box h2 {
+    font-size: 1rem;
+  }
+  .collectibles-heading h2 {
     font-size: 1.2rem;
   }
-  .collectibles-heading h2{font-size: 1.2rem;}
 }
 
 /* for larger screens (upto 4k resolution)   */
